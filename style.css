@@ -11,6 +11,7 @@ body{
     margin: 0;
     font-family: 'Hanken Grotesk', sans-serif;
     font-weight: 700;
+    
 }   
 
 .container{
@@ -78,8 +79,17 @@ body{
     border: hidden;
     width: 100%;
     margin-top: 10px;
-    
+}
 
+button:hover{
+    cursor: pointer;
+    background-color: #7a4ef5;
+    transform: scale(1.1)
+  }
+  
+button:active {
+    background-color: navy;
+    transform: translateY(2px);
 }
 
 .writing{
@@ -157,3 +167,33 @@ body{
     opacity: 70%;
     font-weight: 500;
 }
+
+
+@media(max-width: 576px) {
+    .tainer{
+        flex-direction: column;
+        box-shadow: 0px 0px 0px #ad9ed4;
+        border-radius: 0px;
+    }
+    .container{
+        padding: 0;
+        
+    }
+
+    body{
+        background-color: #ebf1ff ;
+    }
+
+    .left-container{
+        flex-basis: 40%;
+        border-buttom-left-radius: 20px;
+        border-buttom-right-radius: 20px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+    }
+    
+    .right-container{
+        flex-basis: 60%;
+    }
+}
+
